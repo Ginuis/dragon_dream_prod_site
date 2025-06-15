@@ -10,9 +10,8 @@ Route::get('/a-propos', [HomeController::class, 'about']);
 Route::get('/inscription', [RegisterController::class, 'create']);
 Route::post('/inscription', [RegisterController::class, 'store']);
 Route::get('/galerie', [MediaController::class, 'index']);
-
-
-
+Route::post('/inscription', [RegisterController::class, 'store']);
+Route::get('/export-inscriptions', [RegisterController::class, 'export']);
 
 //use Illuminate\Support\Facades\Route;
 
